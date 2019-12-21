@@ -48,25 +48,25 @@
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="青呱呱">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/leetcode/index.html">
 <meta property="og:site_name" content="青呱呱">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Jaden">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/categories/leetcode/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
+    isHome: false,
     isPost: false
   };
 </script>
 
-  <title>青呱呱</title>
+  <title>分类: leetcode | 青呱呱</title>
   
 
 
@@ -160,209 +160,47 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-        
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/22/leetcode-1-Two-Sum/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jaden">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="青呱呱">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/22/leetcode-1-Two-Sum/" class="post-title-link" itemprop="url">leetcode_1.Two Sum</a>
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h1 class="collection-header">leetcode
+          <small>分类</small>
         </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-22 02:47:53 / 修改时间：03:04:06" itemprop="dateCreated datePublished" datetime="2019-12-22T02:47:53+08:00">2019-12-22</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      </div>
 
       
-          <p><img src="/res/lc.jpg" alt=""></p>
-<p>给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
-<p>示例:</p>
-<p>给定 nums = [2, 7, 11, 15], target = 9</p>
-<p>因为 nums[0] + nums[1] = 2 + 7 = 9<br>所以返回 [0, 1]</p>
-<p>来源：力扣（LeetCode）<br>链接：<a href="https://leetcode-cn.com/problems/two-sum" target="_blank" rel="noopener">https://leetcode-cn.com/problems/two-sum</a><br>著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</p>
-<p>C#:</p>
-<pre><code>public class Solution {
-    public int[] TwoSum(int[] nums, int target) {
-        int length = nums.Length;
-        Dictionary&lt;int, int&gt; map = new Dictionary&lt;int, int&gt;(length);
-        for(int i = 0; i &lt; length; i++)
-        {
-            map[nums[i]] = i;
-        }
-
-        for(int i = 0; i &lt; length; i++)
-        {
-            int num2 = target - nums[i];
-            if(map.ContainsKey(num2) &amp;&amp; map[num2] != i)
-            {
-                return new int[]{i, map[num2]};
-            }
-        }
-        return null;
-    }
-}</code></pre><hr>
-<p>第一感总是暴力搜索arr[i] + arr[j] = target<br>但是实际上这里arr[j] = target - arr[i]是一个确定值，如果先做一个反向索引的map记录下value-index的关系，那么只需要遍历一次即可。<br>注意如果查到的j==i需要舍弃，即target = 2 * arr[i]时应找另一个相同值的index</p>
-<hr>
-
-      
+    <div class="collection-year">
+      <h1 class="collection-header">2019</h1>
     </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2019-12-22T02:47:53+08:00"
+              content="2019-12-22">
+          12-22
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2019/12/22/leetcode-1-Two-Sum/" itemprop="url">
+            <span itemprop="name">leetcode_1.Two Sum</span>
+          </a>
+      </h2>
+
+    </header>
   </article>
-  
-  
-  
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/22/dream/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Jaden">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="青呱呱">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/12/22/dream/" class="post-title-link" itemprop="url">hexo-next设置</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2019-12-22 00:46:26 / 修改时间：02:16:13" itemprop="dateCreated datePublished" datetime="2019-12-22T00:46:26+08:00">2019-12-22</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%BC%AB%E7%AC%94/" itemprop="url" rel="index">
-                    <span itemprop="name">漫笔</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>使用hexo里next主题设置blog的部分参数如下</p>
-<pre><code>根目录下_config.yml设置
-title: 青呱呱
-author: Jaden
-language: zh-CN
-
-theme下_config.yml设置
-scheme: Gemini
-
-powered:
-# Hexo link (Powered by Hexo).
-enable: false
-# Version info of Hexo after Hexo link (vX.X.X).
-version: false
-
-theme:
-# Theme &amp; scheme info link (Theme - NexT.scheme).
-enable: false
-# Version info of NexT after scheme info (vX.X.X).
-version: false</code></pre><p>常用指令</p>
-<pre><code>hexo n &quot;title&quot;
-hexo clean
-hexo g
-hexo s
-hexo d</code></pre><p>设置分类的办法</p>
-<pre><code>hexo new page categories
-然后index.md里新增type
----
-title: categories
-date: 2019-12-22 00:41:33
-type: categories
----
-然后新增文章里指定 categories: 漫笔</code></pre><p><img src="/res/bg.jpg" alt=""></p>
-
-      
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
+  
+  
+  
 
   
 

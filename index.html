@@ -165,6 +165,81 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/29/SetNotePadPlus/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jaden">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="青呱呱">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/29/SetNotePadPlus/" class="post-title-link" itemprop="url">如何设置Notepad++执行Python(Lua)</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2019-12-29 00:40:47 / 修改时间：00:57:04" itemprop="dateCreated datePublished" datetime="2019-12-29T00:40:47+08:00">2019-12-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/geek/" itemprop="url" rel="index">
+                    <span itemprop="name">geek</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Notepad++的运行可以方便的使用外部程序运行当前文件。对于Python和Lua这种脚本语言，可以直接运行查看结果。<br>如我们要添加Python脚本的快捷运行：<br><img src="/res/run1.png" alt=""><br><img src="/res/run2.png" alt=""><br>指令如下，这里采用的python3.8</p>
+<pre><code>cmd /k D:\python-3.8.0\python-3.8.0-embed-amd64\python.exe &quot;$(FULL_CURRENT_PATH)&quot; &amp; PAUSE &amp; EXIT</code></pre><p>cmd /k 表示使用命令行执行程序，执行完不关闭<br>python3.8路径<br>“$(FULL_CURRENT_PATH)” 表示当前文件<br>还可以保存快捷键如图<br><img src="/res/run3.png" alt=""><br>之后Alt+Shift+L即可以python执行当前文件<br>Python</p>
+<pre><code>sum = 0
+for x in range(101): #[0,n)
+    sum = sum + x
+print(&quot;sum1-100 = &quot; + str(sum))</code></pre><p><img src="/res/run4.png" alt=""><br>同理对于lua可以使用同样的处理。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/22/leetcode-3-Longest-Substring-Without-Repeating-Characters/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -546,14 +621,14 @@ type: categories
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>

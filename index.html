@@ -165,6 +165,84 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/31/linuxCommand/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jaden">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="青呱呱">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/31/linuxCommand/" class="post-title-link" itemprop="url">常用Linux指令</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-01-31 22:21:48 / 修改时间：23:27:57" itemprop="dateCreated datePublished" datetime="2020-01-31T22:21:48+08:00">2020-01-31</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Windows连接Linux服务器推荐使用SecureCRT软件。<br>备用地址<a href="/res/SecureCRT.zip">SecureCRT</a><br>安装流程及连接过程略，连接后的效果图如下：<br><img src="/res/linux/title.png" alt=""></p>
+<p>1 ls和ll<br>均为列出当前目录命令，区别</p>
+<pre><code>ls横排，ll竖排。</code></pre><p>2 cd<br>切换文件夹，可以多层跳入</p>
+<pre><code>cd dir
+cd d1/d2/d3
+cd .. 表示跳回父路径</code></pre><p>3 mkdir<br>创建文件夹<br>4 rm<br>移除文件或文件夹</p>
+<pre><code>rm -r表示删除目录</code></pre><p>5 zip<br>压缩文件指令，一般最常用的是递归的压缩当前文件夹所有内容到某个压缩文件下</p>
+<pre><code>zip -q -r data.zip data 我一般使用这个 意思是压缩当前路径下的data文件夹
+-q表示不显示详细信息，-r表示递归压缩子目录</code></pre><p>6 sz rz<br>用于linux和windows上下载文件，本地的上下载目录可以在SecureCRT里设置，如图<br><img src="/res/linux/rz.png" alt=""><br>一般的，查询Linux服务器上的日志可以简单的利用上述指令下载到本地查看。<br>不过相对来说直接在Linux上查询过滤会更方便，而且速度更快。<br>待续</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/29/SetNotePadPlus/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -621,14 +699,14 @@ type: categories
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
@@ -653,7 +731,7 @@ type: categories
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
